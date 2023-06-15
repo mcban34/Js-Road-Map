@@ -50,3 +50,8 @@ document.write(country) // Türkiye
 let city = 'İstanbul';
 
 document.write(city) // İstanbul
+
+let x =5
+let y =10 
+
+console.log(x,y)
