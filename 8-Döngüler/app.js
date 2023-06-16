@@ -120,3 +120,12 @@ for(let i=1;i<3;i++){
     }
     //1,1,1,2,2,2
 }
+
+//* Çarpım tablosunu consol'a hesaplayarak yazdıran iç içe for örneği
+console.log("Çarpım Tablosu\n--------------");
+for(let i=1; i<=10; i++) {
+    for(let j=1; j<=10; j++) {
+        console.log(i + " x " + j + " = " + i*j);
+    }
+    console.log("\n");
+}
