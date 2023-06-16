@@ -39,6 +39,12 @@ console.log(say9/say10) //5
 console.log(10%2) //0
 console.log(10%6) //4
 
+//*örnek
+let degisken = 20
+let degisken2 = 10
+let modAlSonuc = degisken%degisken2
+console.log(modAlSonuc)
+
 //?üssü alma
 console.log(10**2) //100
 console.log(5**2) //25
