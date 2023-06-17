@@ -35,8 +35,36 @@ console.log(Math.round(1.1)); // Sonuç: 1
 
 /* Örnekler*/ 
 
+// 0 ile 100 arasında rastgele bir puan elde edelim
+const puan = Math.floor(Math.random() * 101);
+
+// Puanı ekrana yazdıralım
+console.log("Puanınız: " + puan);
+
+// Puan aralığına göre notu belirleyelim
+let not;
+if (puan >= 90) {
+  not = "AA";
+} else if (puan >= 80) {
+  not = "BA";
+} else if (puan >= 70) {
+  not = "BB";
+} else if (puan >= 60) {
+  not = "CB";
+} else if (puan >= 50) {
+  not = "CC";
+} else {
+  not = "FF";
+}
+console.log("Notunuz: " + not);
 
 
+
+//! Zat atan kodu yazalım.
+
+const zarAtmaSonucu = Math.floor(Math.random() * 6) + 1;
+
+console.log("Zar Atma Sonucu: " + zarAtmaSonucu);
 
 //! Katılımcı listesi oluşturulsun ve oluşturulan listeden rastgele biri seçilsin. Eğer katılımcı yok ise "Çekilişe katılan kimse yok!" mesajı ekrana yazdırılır.
 //! Eğer geçerli bir katılımcı sayısı varsa bir kura çekilsin ve çekilişi rastgele kazanan bir katılımcı olsun. Çekiliş sonucunu ekrana yazdıran kodu yazdıralım.
