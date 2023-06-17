@@ -77,6 +77,75 @@
 
 // /* Örnekler  */
 
+
+//! Karşılaştırma Operatörleri
+
+// == (Eşitse), iki değer eşitse doğrulaması yapmak için kullanılır.
+
+let x=5 ;
+let y=5 ;
+ if (x==y) {
+  console.log('iki değer birbirine eşit..');
+ }
+
+ //? != (Eşit değilse), iki değer eşit değil ise doğrulaması yapmak için kullanılır.
+
+ let sayi1=5 ;
+ let sayi2=10 ;
+ if (say1!=sayi2) {
+  console.log('iki değer birbirine eşit değildir..');
+ }
+
+  //? === (denkse), iki değer denk  ise doğrulamasını yapmak için kullanılır.
+  //? Eşitlik ile denklik arasındaki fark ise denklik kontrolünde veri türlerini kontrol etmesidir.
+
+  let sayi3=5 ; // x ='5' olsaydı denk olmazdı
+  let sayi4=5 ;
+  if (sayi3===sayi4) {
+   console.log('iki değer birbirine denkdir..');
+  }
+ 
+  //? !== (denk değilse), iki değer denk değil ise doğrulaması yapmak için kullanılır.
+
+  let sayi5=5 ; 
+  let sayi6='5' ;
+  if (sayi5!==sayi6) {
+   console.log('iki değer birbirine denk değildir..');
+  }
+ 
+  //? < (küçükse), ilk değerin ikinci değerden küçük olma durumunu kontrol için kullanılır.
+
+  let sayi7=12 ; 
+  let sayi8=7 ;
+  if (sayi8<sayi7) {
+   console.log('sayi8 değeri sayi7 den küçüktür.');
+  }
+
+  //? > (büyükse), ilk değerin ikinci değerden büyük olma durumunu kontrol için kullanılır.
+
+  let sayi9=12 ; 
+  let sayi10=7 ;
+  if (sayi9>sayi10) {
+   console.log('sayi9 değeri sayi10 dan büyüktür.');
+  }
+
+  //? <= (küçük veya eşitse ), ilk değerin ikinci değerden küçük olma veya eşit olma durumunu kontrol için kullanılır.
+
+  let sayi11=12;
+  let sayi12=7;
+   if(sayi12<=sayi11){
+    console.log('sayi12 değeri sayi11 dan küçük veya eşittir.')
+   }
+
+     //? >= (büyük veya eşitse ), ilk değerin ikinci değerden büyül olma veya eşit olma durumunu kontrol için kullanılır.
+
+   let sayi13=12;
+   let sayi14=7;
+   if(sayi13>=sayi14){
+    console.log('sayi13 değeri sayi14 den büyük veya eşittir.')
+   }
+
+
 // //! sayı eşitmi?
 
 // if (44 == 44) {
@@ -201,3 +270,7 @@
 // } else {
 //     console.log("Kaydınız Başarı İle Oluşturuldu! " + kadi);
 // }
+
+
+
+
