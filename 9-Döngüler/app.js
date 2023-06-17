@@ -129,3 +129,111 @@ for(let i=1; i<=10; i++) {
     }
     console.log("\n");
 }
+
+
+//!FOREACH
+//*forEach bir döngü çeşididir ve dizi üzerinde her bir eleman için tekrarlayan bir işlem yapmanıza olanak sağlar. 
+//*forEach yöntemi, her bir elemana uygulanan bir geri çağırma fonksiyonunu çalıştırır.
+
+
+// array.forEach(element => {
+    //*hazır yapıda kullanıldığında array alanına varolan dizinizi döndürmenize yarar
+// });
+
+
+let diller = ["js","php","c#","c","c++","python"]
+.forEach(element => {
+    console.log(element)
+});
+
+//*basit bir örnekle dizide var olan sayıların toplamını bir değişkende toplayalım
+
+let fiyatlar= [20,40,50,15,76]
+let toplamFiyat = 0
+fiyatlar.forEach(element => {
+    toplamFiyat+=element
+});
+console.log(toplamFiyat);
+
+//?toplu dizi obje mantığındada foreach kolay bir sistem sağlıyabilir
+let newKullanicilar = [
+    {
+        id:1,
+        kadi:"mehmet",
+        sifre:123
+    },
+    {
+        id:2,
+        kadi:"semra",
+        sifre:456
+    },
+    {
+        id:3,
+        kadi:"rojin",
+        sifre:789
+    },
+]
+
+newKullanicilar.forEach(element => {
+    console.log(element) //doğrudan objeleri diziden ayrıştırarak getirir {},{},{}
+});
+
+newKullanicilar.forEach(element => {
+    console.log(element.kadi) //mehmet,semra,rojin => toplu olarak duran kullanıcıların sadece kullanıcı isimlerini getirir
+});
+
+
+//*dizi içerisinde küçük harflerle oluşturulan isimleri büyük harflerle bir dizide toplamak
+let names = ["ahmet","mehmet","meryem","rojin","semra"]
+names.forEach((element,index) => {
+    names[index] = element.toUpperCase() //topUpperCase küçük harfleri büyük harfe dönüştürür
+});
+console.log(names)
+
+//*dizi içerisinden pozitif sayıları bulunuz
+let numbers = [-1,-3,4,2,1,-5]
+let pozitifSayilar = []
+numbers.forEach(element => {
+    if(element>0){
+        pozitifSayilar.push(element) //push dizi içerisine yeni elemanlar ekler
+    }
+});
+console.log(pozitifSayilar)
+
+//!for of
+//*JavaScript'te bir dizi, dize veya iterable (yineleyici) nesne üzerinde dolaşmak için kullanılan bir döngüdür. 
+//*Bu döngü, her bir elemanı teker teker almanızı sağlar.
+
+let elements = ["a","b","c","d","e"]
+for (const iterator of elements) {
+    console.log(iterator); //a,b,c,d,e,
+}
+
+//!for in 
+//*for of ile aynı çalışır fakat elimize index numarası olarak veriyi gönderir
+for (const key in elements) {
+    console.log(key)
+}
+
+const rehber = [
+    {
+        "isim":"mehmet",
+        "numara":"2345678"
+    },
+    {
+        "isim":"meryem",
+        "numara":"2345678"
+    },
+    {
+        "isim":"rojin",
+        "numara":"2345678"
+    }
+]
+
+for (const iterator in rehber) {
+    console.log(iterator) //0,1,2
+}
+
+for (const iterator in rehber) {
+    console.log(rehber[iterator].isim) //mehmet,meryem,rojin
+}
