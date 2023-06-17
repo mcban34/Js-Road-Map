@@ -237,3 +237,28 @@ for (const iterator in rehber) {
 for (const iterator in rehber) {
     console.log(rehber[iterator].isim) //mehmet,meryem,rojin
 }
+
+
+
+
+//While döngüsü, içerisinde tanımlanan koşul sağlandığı sürece belirli komut ifadesi grubunun çalıştırılmasını sağlar. 
+//Şart ifadesinin doğruluğu her döngünün başında kontrol edilir, buna göre döngünün içerisindeki komut ifadeleri çalıştırılmaya devam eder ya da döngü sona erer.
+// Eğer şart sağlanmıyorsa while hiç çalıştırılmaz.
+
+
+let i=0;
+while (i<20){
+   console.log(i)
+   i++
+}
+
+//* Genellikle sonsuz döngüler için kullanılır.
+
+ let j=0
+ while(true) {
+   console.log(j)
+   if(j==100) {  
+       break
+   }
+  i++
+ }
