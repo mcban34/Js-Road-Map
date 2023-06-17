@@ -199,3 +199,41 @@ numbers.forEach(element => {
     }
 });
 console.log(pozitifSayilar)
+
+//!for of
+//*JavaScript'te bir dizi, dize veya iterable (yineleyici) nesne üzerinde dolaşmak için kullanılan bir döngüdür. 
+//*Bu döngü, her bir elemanı teker teker almanızı sağlar.
+
+let elements = ["a","b","c","d","e"]
+for (const iterator of elements) {
+    console.log(iterator); //a,b,c,d,e,
+}
+
+//!for in 
+//*for of ile aynı çalışır fakat elimize index numarası olarak veriyi gönderir
+for (const key in elements) {
+    console.log(key)
+}
+
+const rehber = [
+    {
+        "isim":"mehmet",
+        "numara":"2345678"
+    },
+    {
+        "isim":"meryem",
+        "numara":"2345678"
+    },
+    {
+        "isim":"rojin",
+        "numara":"2345678"
+    }
+]
+
+for (const iterator in rehber) {
+    console.log(iterator) //0,1,2
+}
+
+for (const iterator in rehber) {
+    console.log(rehber[iterator].isim) //mehmet,meryem,rojin
+}
