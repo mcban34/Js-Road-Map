@@ -10,6 +10,10 @@
     <span style="text-align: center;">Developer-Emre</span>
   </div>
   <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+    <img src="https://avatars.githubusercontent.com/u/136821107?v=4" width="70" height="70">
+    <span style="text-align: center;">Tugbatan</span>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
     <img src="https://avatars.githubusercontent.com/u/129194516?v=4" width="70" height="70">
     <span style="text-align: center;">mertekm</span>
   </div>
