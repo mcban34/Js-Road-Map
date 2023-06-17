@@ -82,6 +82,16 @@ let x = 5;
 eval("x = 10");
 alert(x); // 10, değer değişti
 
+ //?100 lük değerlendirme sisteminde dönem içinde
+ //?55 puan üzerinden 50 puan toplayan bir öğrencinin 
+ //?B+ harf notu alması için (86 puan) %45 I hesaplanacak final sınavında 100 üzerinden
+ //?en az kaç puan alması gerektiğini ekrana yazan javascript kodunu yazınız.
+
+ n=50;
+ x=86-n;
+ y=x*100/45;
+ alert(`Geçmeniz için sınav puanınızz: ${y}`);
+
 
 
 

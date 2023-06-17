@@ -81,3 +81,19 @@ vize = +prompt("Vize notunuzu giriniz : ")
 final = +prompt("Final notunuzu giriniz : ")
 ortlama = +((vize*0.4) + (final*0.6))
 console.log("Ortalamanız : " + ortlama)
+
+
+//?Klavyeden girilen iki sayının aritmetik olarak dört işlem sonucunu 
+//?hesaplayan ve sonucu ekranda gösteren javascript kodunu yazınız.
+let s1, s2, toplam, fark, bol, carp2;
+s1=Number(prompt("Birinci sayıyı giriniz:"));
+s2=Number(prompt("İkinci sayıyı giriniz:"));
+toplam=s1+s2;
+fark=s1-s2;
+bol=s1/s2;
+carp2=s1*s2;
+alert(`
+Sayıların toplamı:${toplam},
+Sayıların farkı:${fark},
+Sayılar Bölümü:${bol},
+Sayılar Çarpımı:${carp}`);

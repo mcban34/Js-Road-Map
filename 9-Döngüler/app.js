@@ -101,6 +101,20 @@ for(let i=0;i<10;i++){
     //ikinci ifde ise i sıfıra eşit olucağı için ekrana sadece sıfır yazdırır => 0 
 }
 
+//? 0 ile 100 sayılarının arasında 25 in katı 
+//? olan sayıların toplamını hesaplayıp ekrana yazdıran Javascript kodunu yazınız.
+
+toplam=0;
+for(let i=0; i<100; i=i+25)
+{
+    if(i>=100)
+    {
+        toplam=toplam+i;
+        
+    }
+}
+alert(toplam)
+
 //?iç içe for kullanımı
 //*for yapısının iç içe kullanım amacı daha karmaşık yapılarda yapıyı kolay hale getirmek için kullanılır
 //*iç içe çalışan döngülerde dışardaki döngü bir kere çalıştıktan sonra içerideki döngüye geçilir
