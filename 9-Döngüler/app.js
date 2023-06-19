@@ -113,7 +113,7 @@ for(let i=0; i<100; i=i+25)
         
     }
 }
-alert(toplam)
+console.log(toplam);
 
 //?iç içe for kullanımı
 //*for yapısının iç içe kullanım amacı daha karmaşık yapılarda yapıyı kolay hale getirmek için kullanılır
@@ -254,11 +254,10 @@ for (const iterator in rehber) {
 
 
 
-
+//!while
 //While döngüsü, içerisinde tanımlanan koşul sağlandığı sürece belirli komut ifadesi grubunun çalıştırılmasını sağlar. 
 //Şart ifadesinin doğruluğu her döngünün başında kontrol edilir, buna göre döngünün içerisindeki komut ifadeleri çalıştırılmaya devam eder ya da döngü sona erer.
 // Eğer şart sağlanmıyorsa while hiç çalıştırılmaz.
-
 
 let i=0;
 while (i<20){
@@ -267,12 +266,30 @@ while (i<20){
 }
 
 //* Genellikle sonsuz döngüler için kullanılır.
-
  let j=0
  while(true) {
+    j++
    console.log(j)
    if(j==100) {  
        break
    }
-  i++
- }
+}
+
+//!do-while
+//do-while döngüsü, while döngüsüne benzer, ancak farklı olarak koşul değerlendirmesi döngünün sonunda gerçekleştirilir.
+//Bu da demektir ki, do bloğu en az bir kez çalıştırılır ve ardından koşul kontrol edilir. Eğer koşul doğru ise döngü devam eder, 
+//aksi halde döngü sonlanır.
+
+//*yapısı
+// let i = 0
+// do{
+//     yapılacak işler
+//     i++
+// }while(//şart sağlandığı sürece)
+
+let doWhileSayi=0
+do{
+    console.log(`Do While Çıktısı : ${doWhileSayi}`)
+    doWhileSayi++
+}
+while(doWhileSayi<10)
