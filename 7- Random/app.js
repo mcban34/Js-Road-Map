@@ -103,3 +103,24 @@ let yedekUser = users[randomYedek]
 users.splice(randomYedek, 1)
 console.log(users)
 console.log(`Kazanan Kullanıcı : ${kazananUser}\nYedek Kullanıcı : ${yedekUser}`)
+
+//! Sayı tahmin oyunu
+
+//Bilgisayar 1-100 arasında bir sayı üretecek, bizim tahminde bulunmamızı isteyecek,  üretilen sayıdan küçük girilirse "Küçük sayı girdiniz", büyük sayı girilirse "Büyük sayı girdiniz" yazacak, kullanıcı doğru tahmin ederse "Tebrikler" yazacak.   
+
+uretilen= Math.floor(Math.random()*100)+1;
+
+while(1)
+{
+  sayi= prompt('Bir sayı giriniz:');
+   if (sayi>uretilen)
+   alert('Büyük sayı girdiniz');
+
+   else if (sayi<uretilen)
+   alert('Küçük sayı girdiniz');
+
+   else if (sayi==uretilen){
+  alert('Tebrikler bildiniz'); break;
+}
+
+}
