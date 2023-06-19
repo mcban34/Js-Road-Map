@@ -60,7 +60,7 @@ console.log("Notunuz: " + not);
 
 
 
-//! Zat atan kodu yazalım.
+//! Zar atan kodu yazalım.
 
 const zarAtmaSonucu = Math.floor(Math.random() * 6) + 1;
 
@@ -87,3 +87,24 @@ if (katilimciSayisi === 0) {
   console.log("Çekilişin kazananı: " + kazanan);
 }
 
+//! Sayı tahmin oyunu
+
+//Bilgisayar 1-100 arasında bir sayı üretecek, bizim tahminde bulunmamızı isteyecek,  üretilen sayıdan küçük girilirse "Küçük sayı girdiniz", büyük sayı girilirse "Büyük sayı girdiniz" yazacak, kullanıcı doğru tahmin ederse "Tebrikler" yazacak.   
+
+uretilen= Math.floor(Math.random()*100)+1;
+ 
+while(1)
+{
+  sayi= prompt('Bir sayı giriniz:');
+   if (sayi>uretilen)
+   alert('Büyük sayı girdiniz');
+
+   else if (sayi<uretilen)
+   alert('Küçük sayı girdiniz');
+
+   else if (sayi==uretilen){
+  alert('Tebrikler bildiniz'); break;
+}
+
+}
+ 

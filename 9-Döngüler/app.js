@@ -293,3 +293,6 @@ do{
     doWhileSayi++
 }
 while(doWhileSayi<10)
+
+
+
