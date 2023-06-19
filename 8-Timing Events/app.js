@@ -11,52 +11,49 @@
 //* 3- clearTimeout() ve clearInterval(): setTimeout() ve setInterval() tarafından oluşturulan zamanlayıcıları temizlemek ve durdurmak için kullanılır.
 
 
-      /* Örnek-1 */
+
+   /* Örnek-1 */
 
 
-function mesajiGoster() {
-    console.log("Merhaba, zamanlayıcı ile çalışıyorum!");
+let mesajiGoster = () => {
+  console.log("Merhaba, zamanlayıcı ile çalışıyorum!");
+};
+
+// 3 saniye sonra mesajiGoster fonksiyonunu çağıralım
+setTimeout(mesajiGoster, 3000); // 3000 milisaniye === 3sn
+
+/* Örnek-2 */
+let intervalId; // setInterval tarafından döndürülen ID'yi tutmak için değişken oluşturuldu
+
+let mesajGoster = () => {
+  console.log("Her 2 saniyede bir mesajı görüntülüyorum!");
+};
+
+// Her 2 saniyede bir mesajiGoster fonksiyonunu çağıralım
+intervalId = setInterval(mesajiGoster, 2000);
+
+/* Örnek-3 */
+let sayac = 0;
+let zamanlayici;
+
+let arttir = () => {
+  sayac++;
+  console.log("Sayac değeri: " + sayac);
+
+  if (sayac === 5) {
+    clearInterval(zamanlayici); // clearInterval ile zamanlayıcı 5 e geldiğinde durduruldu.
+    console.log("Zamanlayıcı durduruldu!");
+  }
 }
 
-  // 3 saniye sonra mesajiGoster fonksiyonunu çağıralım
-  setTimeout(mesajiGoster, 3000); // 3000 milisaniye === 3sn
+// Her 1 saniyede bir arttir fonksiyonunu çağıralım
+zamanlayici = setInterval(arttir, 1000);
 
+/* Örnek-4 */
+let countdown = 10;
+let timer;
 
-      /* Örnek-2 */
-
-
-function mesajiGoster() {
-    console.log("Her 2 saniyede bir mesajı görüntülüyorum!");
-}
-
-  // Her 2 saniyede bir mesajiGoster fonksiyonunu çağıralım
-  setInterval(mesajiGoster, 2000);
-
-  /* Örnek-3 */
-
-
-  let sayac = 0;
-
-  function arttir() {
-    sayac++;
-    console.log("Sayac değeri: " + sayac);
-  
-    if (sayac === 5) {
-      clearInterval(zamanlayici); //clearInterval ile zamanlayıcı 5 e geldiğinde durduruldu.
-      console.log("Zamanlayıcı durduruldu!");
-    }
-}
-
-  // Her 1 saniyede bir arttir fonksiyonunu çağıralım
-  let zamanlayici = setInterval(arttir, 1000);
-
-
-
-  /* Örnek-4 */
-
-  let countdown = 10;
-
-function countDown() {
+let countDown = () => {
   console.log("Geri sayım: " + countdown);
 
   if (countdown === 0) {
@@ -67,5 +64,4 @@ function countDown() {
   countdown--;
 }
 
-const timer = setInterval(countDown, 1000); // Her 1 saniyede bir countDown fonksiyonunu çağırır
-
+timer = setInterval(countDown, 1000); // Her 1 saniyede bir countDown fonksiyonunu çağırır
