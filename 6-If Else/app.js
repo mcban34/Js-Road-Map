@@ -272,5 +272,55 @@ let y=5 ;
 // }
 
 
+// ! basit bir bankamatik uygulaması oluşturunuz
+// ! kullanıcıdan bir şifre alınız şifre doğru olduğu taktirde işlemler alanlarına yöneltilsin
+// ! para çekme ve para yatırma işlemleri yapılsın
+
+// let sifre = 1234;
+// let secim;
+// let bakiye = 1000;
+// let cekilecekTutar, yatirilacakTutar;
+// let girilenSifre = Number(prompt("Hoşgeldiniz. Lütfen şifrenizi giriniz :"));
+// if (sifre == girilenSifre) {
+//     secim = prompt("Şifrenizi doğru girdiniz.\nLütfen para çekmek için 1'i, para yatırmak için 2'yi tuşlayınız :")
+//     if (secim == 1) {
+//         cekilecekTutar = prompt("Çekmek istediğiniz tutarı giriniz :")
+//         if (cekilecekTutar <= bakiye) {
+//             bakiye -= cekilecekTutar;
+//             console.log(`Para çekme işleminiz tamamlanmıştır. Kalan bakiyeniz : ${bakiye}₺'dir.`)
+//         }
+//         else {
+//             console.log(`Yetersiz bakiyeden dolayı para çekme işleminiz tamamlanamamıştır. Mevcut bakiyeniz : ${bakiye}₺'dir.`)
+//         }
+//     } else if (secim == 2) {
+//         yatirilacakTutar = Number(prompt("Yatırmak istediğiniz tutarı giriniz :"))
+//         bakiye += yatirilacakTutar;
+//         console.log(`Para yatırma işleminiz tamamlanmıştır. Bakiyeniz : ${bakiye}₺'dir.`)
+//     }
+//     else {
+//         console.log("Hatalı bir tuşlama yaptınız..!")
+//     }
+// } else {
+//     console.log("Şifrenizi hatalı girdiniz. Lütfen tekrar deneyiniz..!")
+// }
+
+
+// ! Bir kişi mağazadan 100 TL ve üzeri alışveriş yaparsa %10 indirim, 200 TL ve üzeri alışveriş
+// ! yaparsa %15 indirim, 300 TL ve üzeri alışveriş yaparsa %20
+// ! indirim kazandığını ve ödeyeceği miktarı ekrana yazınız
+// let alisverisTutari = 100;
+// if (alisverisTutari >= 100 && alisverisTutari < 200) {
+//     console.log(`100₺ ve üzeri alışverişinizden dolayı %10 indirim kazandınız. Ödeyeceğiniz toplam tutar : ${(alisverisTutari * 0.90)}₺'dir.`);
+// }
+
+// else if (alisverisTutari >= 200 && alisverisTutari < 300) {
+//     console.log(`100₺ ve üzeri alışverişinizden dolayı %15 indirim kazandınız. Ödeyeceğiniz toplam tutar : ${alisverisTutari * 0.85}₺'dir.`);
+// }
+// else if (alisverisTutari >= 300) {
+//     console.log(`100₺ ve üzeri alışverişinizden dolayı %20 indirim kazandınız. Ödeyeceğiniz toplam tutar : ${alisverisTutari * 0.80}₺'dir.`);
+// }
+// else {
+//     console.log(`Ödeyeceğiniz toplam tutar : ${alisverisTutari}₺'dir.`);
+// }
 
 

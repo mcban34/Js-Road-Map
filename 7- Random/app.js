@@ -87,3 +87,19 @@ if (katilimciSayisi === 0) {
   console.log("Çekilişin kazananı: " + kazanan);
 }
 
+
+
+//*! kazanan kullanıcı tekrar kazanamaz
+//*! kazanan kullanıcı yedek olamaz
+//*! yedek olan kullanıcı tekrar yedek olamaz
+
+let users = ["mert", "mehmet", "beliz", "eylül", "berke"]
+let randomKazanan = Math.floor(Math.random() * users.length)
+let kazananUser = users[randomKazanan]
+users.splice(randomKazanan, 1)
+console.log(users)
+let randomYedek = Math.floor(Math.random() * users.length)
+let yedekUser = users[randomYedek]
+users.splice(randomYedek, 1)
+console.log(users)
+console.log(`Kazanan Kullanıcı : ${kazananUser}\nYedek Kullanıcı : ${yedekUser}`)
