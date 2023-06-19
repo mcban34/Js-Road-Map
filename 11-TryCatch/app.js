@@ -21,18 +21,83 @@ try{
 
 
 /* Örnek-1 */
-try {
-    //! Hata üretebilecek kod bloğu
-    let sonuc = tanimlanmamisDegisken + 10;
-    console.log(sonuc);
 
+// try {
+//     //! Hata üretebilecek kod bloğu
+//     let sonuc = tanimlanmamisDegisken + 10;
+//     console.log(sonuc);
+
+// } catch (error) {
+//     //! Hata yönetimi ve işlemler
+//     console.log("Bir hata oluştu: " + error.message);
+// }
+
+
+
+//* try-catch bloğunun ardından kullanılabilen `finally` yapısı try-catch bloğundan bağımsız olarak her durumda çalıştırılacak kodları içermektedir.
+
+try {
+    //! Hata üretebilecek kod parçacığı
 } catch (error) {
     //! Hata yönetimi ve işlemler
-    console.log("Bir hata oluştu: " + error.message);
+} finally {
+    //! Her durumda çalışacak kod parçacığı
 }
 
 
 
-//* try-catch bloğunun ardından kullanılabilen `finally` yapısı oluşturabilirsiniz. 
-//* Bu blok, try-catch bloğundan bağımsız olarak her durumda çalıştırılacak kodları içerir. finally bloğu, hata olsun ya da olmasın her zaman çalışır.
+/* örnek-2 */
+
+try {
+    //! Hata üretebilecek kod parçacığı
+    console.log("try bloğu çalışıyor");
+
+} catch (error) {
+    //! Hata yönetimi ve işlemler
+    console.log("Hata yakalandı: " + error.message);
+} 
+    finally {
+    //! Her durumda çalışacak kod parçacığı
+    console.log("finally bloğu çalışıyor");
+}
+
+/* örnek-3 */
+
+try {
+    const a = 10;
+    const b = 2;
+  
+    if (b === 0) {
+      throw "Bir sayıyı sıfıra bölemezsiniz.";
+    }
+  
+    const result = a / b;
+    console.log("Sonuç: " + result);
+  } catch (error) {
+    console.log("Hata yakalandı: " + error);
+  } finally {
+    console.log("İşlem tamamlandı.");
+  }
+
+
+  /* Örnek-4 */
+
+  try {
+    let a = 10;
+    let b = 0;
+  
+    if (b === 0) {
+      throw new Error("Bu sayıyı sıfıra bölemezsiniz.");
+    }
+  
+    let sonuc = a / b;
+    console.log("Sonuç: " + sonuc);
+  } catch (error) {
+    console.log("Hata yakalandı: " + error.message);
+  } finally {
+    console.log("İşlem tamamlandı.");
+  }
+
+  //* throw new ile özel bir hata mesajı oluşturabilmek için kullanılmaktadır. throw hatayı temsil eder, new ile birlikte kullanıldığında hata sınıfını çağırmaktadır.
+  //* En bilinen hata sınıfı 'Error' ile birlikte kullanabilirsiniz. 
 
