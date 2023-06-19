@@ -16,7 +16,7 @@ Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini gelişti
 
 2. **Klonlama (Clone):** Çatal aldığınız projeyi bilgisayarınıza klonlayın.
 
-3. **Konu Başlıkları:** Klonladığınız projenin içerisinde, konu başlıkları için klasörler bulunmaktadır. İlgilendiğiniz bir konu başlığı altında yeni bir dosya oluşturun veya mevcut dosyalara örnekler ekleyin.
+3. **Konu Başlıkları:** Klonladığınız projenin içerisinde, konu başlıkları için klasörler bulunmaktadır. İlgilendiğiniz bir konu başlığı altında yeni örnekler ekleyin.
 
 4. **Commit Push:** Yaptığınız değişiklikleri commit edin ve kendi forkladığınız projeye push yapın.
 
