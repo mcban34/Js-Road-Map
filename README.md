@@ -1,3 +1,6 @@
+## Önemli Kural
+Lütfen yöneticiler dışında yeni bir konu başlığı eklemeyin, yeni bir konu başlığı eklemek isterseniz ekstralar klasörü altında dilediğiniz konu başlığını anlatabilirsiniz.
+
 ## Amaç
 
 Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini geliştirmek isteyen öğrenciler için bir yol haritası sunmayı amaçlamaktadır. Her bir öğrenci, konu başlıkları altında örnekler oluşturarak projeye katkıda bulunacaktır. Bu challenge, aşağıdaki nedenlerle öğrencilere büyük faydalar sağlayacaktır:
