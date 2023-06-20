@@ -65,3 +65,12 @@ let countDown = () => {
 }
 
 timer = setInterval(countDown, 1000); // Her 1 saniyede bir countDown fonksiyonunu çağırır
+
+// * Örnek-5
+
+let changeBackgroundColor = () => {
+  let randomColor = Math.floor(Math.random() * 16777215).toString(16); // Rastgele hexadecimal renk kodu oluşturuluyor
+  document.body.style.backgroundColor = "#" + randomColor; // Arka plan rengi değiştiriliyor
+};
+
+setInterval(changeBackgroundColor, 2000); // Her 2 saniyede bir arka plan rengini değiştiren fonksiyonu çağırır
