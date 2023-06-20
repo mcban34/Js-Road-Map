@@ -32,6 +32,13 @@ console.log(Math.round(7.5)); // Sonuç: 8
 console.log(Math.round(1.1)); // Sonuç: 1
 
 
+//* Math.ceil() fonksiyonu, verilen sayıyı yukarıya doğru en yakın tam sayıya yuvarlar.
+
+console.log(Math.ceil(4.2)); // Sonuç: 5
+
+console.log(Math.ceil(9.8)); // Sonuç: 10
+
+console.log(Math.ceil(0.75)); // Sonuç: 1
 
 /* Örnekler*/ 
 
