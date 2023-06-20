@@ -97,3 +97,4 @@ alert(x); // 10, değer değişti
 
 
 
+

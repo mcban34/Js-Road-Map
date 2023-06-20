@@ -127,6 +127,15 @@ for(let i=0;i<=5;i++){
     //0,0,1,1,2,2,3,3,4,4,5,5,
 }
 
+// * İç iç döngülerde ters yönde çalışacak şekilde değiştirebilirsiniz. 
+// * Bunun için j değerini i'den başlayarak azaltabilirsiniz.
+
+for(let i=0; i<=5; i++){
+    for(let j=i; j>=0; j--){
+        console.log(j);
+    }
+} // 0,1,0,2,1,0,3,2,1,0,4,3,2,1,0,5,4,3,2,1,0
+
 //*0'dan 3'a kadar olan sayıları 3 kere yazdırın
 for(let i=1;i<3;i++){
     for(let j=0;j<3;j++){
@@ -159,6 +168,13 @@ let diller = ["js","php","c#","c","c++","python"]
 .forEach(element => {
     console.log(element)
 });
+
+// * paramatreli foreach kullanımı örneği;
+let diller2 = ["js","php","c#","c","c++","python"];
+diller2.forEach((element, index) => {
+    console.log(`Dil: ${element}, Index: ${index}`);
+}); 
+// Dil: js, Index: 0 \n Dil: php, Index: 1 \n Dil: c#, Index: 2 \n Dil: c, Index: 3 \n Dil: python, Index: 5 \n Dil: c++, Index: 4
 
 //*basit bir örnekle dizide var olan sayıların toplamını bir değişkende toplayalım
 
@@ -220,7 +236,15 @@ console.log(pozitifSayilar)
 
 let elements = ["a","b","c","d","e"]
 for (const iterator of elements) {
-    console.log(iterator); //a,b,c,d,e,
+    console.log(iterator); //a,b,c,d,e
+}
+
+// *dizideki elemanları for of döngüsü ile tersten yazdırma;
+
+let elements2 = ["a","b","c","d","e"];
+elements2.reverse();
+for (const iterator of elements2) {
+    console.log(iterator); //e,d,c,b,a
 }
 
 //!for in 
@@ -252,6 +276,27 @@ for (const iterator in rehber) {
     console.log(rehber[iterator].isim) //mehmet,meryem,rojin
 }
 
+for (const iterator in rehber) {
+    console.log(`İsim: ${rehber[iterator].isim}, Numara: ${rehber[iterator].numara}`);
+} // İsim: mehmet, Numara: 2345678 \n İsim: meryem, Numara: 2345678 \n İsim: rojin, Numara: 2345678
+
+//!for await
+// * asenkron iterasyonları desteklemek için kullanılan bir döngüdür. 
+// *Bir iterable üzerindeki asenkron işlemleri sırayla gerçekleştirmek için kullanılır. 
+
+// Asenkron bir işlemi simüle eden bir fonksiyon
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+(async function () {
+  const sayilar = [1, 2, 3, 4, 5];
+
+  for await (let sayi of sayilar) {
+    await delay(1000);  // Her bir sayı için 1 saniye bekle
+    console.log(sayi);
+  }
+})();
 
 
 //!while
@@ -293,3 +338,4 @@ do{
     doWhileSayi++
 }
 while(doWhileSayi<10)
+

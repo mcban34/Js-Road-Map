@@ -45,13 +45,13 @@ console.log(renkler[0]) //sarı
 console.log(renkler[3]) //yeşil
 
 //*length dizi uzunluğunu bize verir (eleman sayısı diyebiliriz)
-let renklerLenght = renkler.length
-console.log(renkler)
+let renklerLength = renkler.length;
+console.log(renklerLength);
 
 //*dizideki son elemanı almak için (dizi uzunluğundan -1 çıkartılır)
 console.log(renkler[renkler.length-1])
 
-//?obejeler (key-value değerine göre veriler alır (veri tabanı yapısında diyebiliriz))
+//?objeler (key-value değerine göre veriler alır (veri tabanı yapısında diyebiliriz))
 let kullanici = {
     isim:"mehmet",
     soyisim:"coban",
@@ -87,7 +87,7 @@ console.log(urunler) //*[{},{},{}] => dizi içerisindeki toplu objeler tutulur
 //*veriye ulaşmak (0. indexdeki content verisini çeker)
 console.log(urunler[0].content) 
 
-//?boolean
+//?boolean (Mantıksal veri türleri)
 //*boolean bizlere true-false  döndürür
 let veriDurum = true
 let veriDurum2 = false
