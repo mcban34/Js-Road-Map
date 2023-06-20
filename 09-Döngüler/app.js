@@ -280,6 +280,24 @@ for (const iterator in rehber) {
     console.log(`İsim: ${rehber[iterator].isim}, Numara: ${rehber[iterator].numara}`);
 } // İsim: mehmet, Numara: 2345678 \n İsim: meryem, Numara: 2345678 \n İsim: rojin, Numara: 2345678
 
+//!for await
+// * asenkron iterasyonları desteklemek için kullanılan bir döngüdür. 
+// *Bir iterable üzerindeki asenkron işlemleri sırayla gerçekleştirmek için kullanılır. 
+
+// Asenkron bir işlemi simüle eden bir fonksiyon
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+(async function () {
+  const sayilar = [1, 2, 3, 4, 5];
+
+  for await (let sayi of sayilar) {
+    await delay(1000);  // Her bir sayı için 1 saniye bekle
+    console.log(sayi);
+  }
+})();
+
 
 //!while
 //While döngüsü, içerisinde tanımlanan koşul sağlandığı sürece belirli komut ifadesi grubunun çalıştırılmasını sağlar. 
