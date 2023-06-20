@@ -50,6 +50,10 @@ Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini gelişti
     <span style="text-align: center;">BelizBapir</span>
   </div>
   <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+    <img src="https://avatars.githubusercontent.com/u/120274425?v=4" width="70" height="70">
+    <span style="text-align: center;">BerkKural</span>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
     <img src="https://avatars.githubusercontent.com/u/122961919?v=4" width="70" height="70">
     <span style="text-align: center;">akmanzb</span>
   </div>
