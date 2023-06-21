@@ -104,16 +104,13 @@ for(let i=0;i<10;i++){
 //? 0 ile 100 sayılarının arasında 25 in katı 
 //? olan sayıların toplamını hesaplayıp ekrana yazdıran Javascript kodunu yazınız.
 
-toplam=0;
-for(let i=0; i<100; i=i+25)
-{
-    if(i>=100)
-    {
-        toplam=toplam+i;
-        
+toplam=0
+for(let i=0; i<100; i++){
+    if (i%25==0){
+        toplam+=i
     }
 }
-console.log(toplam);
+console.log(`0-100 arasında 25'in katı olan sayıların toplamı : ${toplam}`); // 0-100 arasında 25'in katı olan sayıların toplamı : 150
 
 //?iç içe for kullanımı
 //*for yapısının iç içe kullanım amacı daha karmaşık yapılarda yapıyı kolay hale getirmek için kullanılır
