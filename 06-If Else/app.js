@@ -92,7 +92,7 @@ if (x == y) {
 
 let sayi1 = 5;
 let sayi2 = 10;
-if (say1 != sayi2) {
+if (sayi1 != sayi2) {
   console.log('iki değer birbirine eşit değildir..');
 }
 
