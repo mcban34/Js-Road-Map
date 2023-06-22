@@ -154,6 +154,18 @@ if (sayi13 >= sayi14) {
 //   console.log("sayılar eşit değildir");
 // }
 
+// ! Kullanıcının girdiği sayının tek mi çift mi olduğunu bulalım
+
+//  number = prompt("lütfen bir sayı giriniz");
+
+// if (number % 2 === 0) {
+//   console.log("Sayı çift");
+// } else {
+//   console.log("Sayı tek");
+// }
+
+
+
 // //! Yaşın 18'den büyük olduğunda "reşitsiniz" yazan program
 // yas = 18;
 
@@ -231,6 +243,8 @@ if (sayi13 >= sayi14) {
 // } else {
 //   console.log("HATALI SEÇİM!");
 // }
+
+
 
 // ! Kullanıcının girdiği 3 sayının en büyük sayısını bulun
 

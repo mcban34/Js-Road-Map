@@ -1,4 +1,4 @@
-
+ 
 //!LOOPS (DÖNGÜLER)
 //?döngüler belirli başlı tekrar eden kod bloklarını çalıştırmak için kullanılır
 //?tekrar eden kodları otomatikleştirmek ve kodu daha verimli hale getirmek için kullanılır
@@ -150,7 +150,6 @@ for(let i=1; i<=10; i++) {
     console.log("\n");
 }
 
-
 //!FOREACH
 //*forEach bir döngü çeşididir ve dizi üzerinde her bir eleman için tekrarlayan bir işlem yapmanıza olanak sağlar. 
 //*forEach yöntemi, her bir elemana uygulanan bir geri çağırma fonksiyonunu çalıştırır.
@@ -226,6 +225,19 @@ numbers.forEach(element => {
     }
 });
 console.log(pozitifSayilar)
+
+//*dizi içerisindeki elemanların toplamını ve çarpımını bulunuz
+const numbers2 = [2, 3, 4, 5];
+let sum = 0;
+let product = 1;
+numbers.forEach( element => {
+  sum += element;
+  product *= element;
+});
+console.log("Toplam: " + sum);
+console.log("Çarpım: " + product);
+
+
 
 //!for of
 //*JavaScript'te bir dizi, dize veya iterable (yineleyici) nesne üzerinde dolaşmak için kullanılan bir döngüdür. 
