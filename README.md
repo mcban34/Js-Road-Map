@@ -64,4 +64,8 @@ Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini gelişti
     <img src="https://avatars.githubusercontent.com/u/122961919?v=4" width="70" height="70">
     <span style="text-align: center;">akmanzb</span>
   </div>
+  <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+    <img src="https://avatars.githubusercontent.com/u/132843372?v=4" width="70" height="70">
+    <span style="text-align: center;">deryaaltinn</span>
+  </div>
 </div>
