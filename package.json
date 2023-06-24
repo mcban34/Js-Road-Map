@@ -1,0 +1,23 @@
+{
+  "name": "js-road-map",
+  "version": "1.0.0",
+  "description": "Lütfen yöneticiler dışında yeni bir konu başlığı eklemeyin, yeni bir konu başlığı eklemek isterseniz ekstralar klasörü altında dilediğiniz konu başlığını anlatabilirsiniz.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbeyaban/Js-Road-Map.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbeyaban/Js-Road-Map/issues"
+  },
+  "homepage": "https://github.com/lbeyaban/Js-Road-Map#readme",
+  "dependencies": {
+    "mongodb": "^5.6.0"
+  }
+}
