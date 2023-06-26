@@ -58,7 +58,7 @@
 //? SORGU PARAMETRELERİNE URL'DEN OKUMA ÖRNEĞİ
 
 // let url = 'https://www.example.com/search?q=apple&category=fruits&page=1';
-// let urlParams = new URLSearchParams(url.search);
+// let urlParams = new URLSearchParams(url);
 
 // console.log(urlParams.get('q')); // "apple"
 // console.log(urlParams.get('category')); // "fruits"
