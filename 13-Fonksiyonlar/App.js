@@ -109,3 +109,149 @@
 // let sifre = createPass(sifreUzunluk)
 
 // console.log(`Oluşturulan Şifre : ${sifre}`)
+
+
+//! Faktoriyel Hesaplama kodunu yazdıralım
+
+function faktoriyel(n) {
+    if (n === 0 || n === 1) {
+      return 1;
+    } else {
+      return n * faktoriyel(n - 1);
+    }
+  }
+  
+  let faktoriyelSonucu = faktoriyel(5);
+  console.log(faktoriyelSonucu); // Çıktı: 120
+
+//! Dizi elamanlarını toplayan function yazdıralım
+
+function diziToplami(dizi) {
+    let toplam = 0;
+    for (let i = 0; i < dizi.length; i++) {
+      toplam += dizi[i];
+    }
+    return toplam;
+  }
+  
+  let sayilar = [2, 4, 6, 8, 10];
+  let diziToplamSonucu = diziToplami(sayilar);
+  console.log(diziToplamSonucu); // Çıktı: 30
+
+//! Çift sayıyı bulan function yazdıralım
+
+function ciftSayilariBul(n) {
+    let ciftSayilar = [];
+    for (let i = 1; i <= n; i++) {
+      if (i % 2 === 0) {
+        ciftSayilar.push(i);
+      }
+    }
+    return ciftSayilar;
+  }
+  
+  let n = 10;
+  let ciftSayilarSonucu = ciftSayilariBul(n);
+  console.log(ciftSayilarSonucu); // Çıktı: [2, 4, 6, 8, 10]
+
+//! Bölme işlemi yapılsın, bölme işleminde hatalı işlem var ise hata mesajı döndüren function yazdıralım
+
+function bolmeIslemi(sayi1, sayi2) {
+    try {
+      if (sayi2 === 0) {
+        throw new Error("Sıfıra bölme hatası!");
+      }
+  
+      let sonuc = sayi1 / sayi2;
+      return sonuc;
+    } catch (error) {
+      console.log("Hata yakalandı: " + error.message);
+      return null;
+    }
+  }
+  
+  let sayi1 = 10;
+  let sayi2 = 0;
+  let bolmeSonucu = bolmeIslemi(sayi1, sayi2);
+  console.log(bolmeSonucu); // Çıktı: null
+
+  //!  Kişileri bulan function yazalım 
+
+  function kisiBul(kisiler, ad) {
+    return kisiler.find((kisi) => kisi.ad === ad);
+  }
+  
+  const kisiler = [
+    { ad: "Ahmet", yas: 25 },
+    { ad: "Mehmet", yas: 30 },
+    { ad: "Ayşe", yas: 28 }
+  ];
+  
+  const arananKisi = kisiBul(kisiler, "Mehmet");
+  console.log(arananKisi); // Çıktı: { ad: "Mehmet", yas: 30 }
+
+//! Öğrenci notunun değerlendirildiği (AA-BB-CC-DD) function yazalım
+
+function notuDegerlendir(not) {
+    let durum = "";
+    if (not >= 90) {
+      durum = "AA";
+    } else if (not >= 80) {
+      durum = "BA";
+    } else if (not >= 70) {
+      durum = "BB";
+    } else if (not >= 60) {
+      durum = "CB";
+    } else if (not >= 50) {
+      durum = "CC";
+    } else if (not >= 40) {
+      durum = "DC";
+    } else if (not >= 30) {
+      durum = "DD";
+    } else {
+      durum = "FF";
+    }
+    return durum;
+  }
+  
+  const notDurumu = notuDegerlendir(75);
+  console.log(notDurumu); // Çıktı: "BB" 
+
+  //! Bir alışveriş sepetindeki ürünlerin toplam tutarına göre 
+  //! İndirim miktarını hesaplayan ve ödenecek tutarı belirleyen bir fonksiyon yazalım 
+
+  function indirimDurumuHesapla(sepetToplami) {
+    let indirimYuzdesi = 0;
+    
+    if (sepetToplami >= 1000) {
+      indirimYuzdesi = 25;
+    } else if (sepetToplami >= 300) {
+      indirimYuzdesi = 15;
+    }
+    
+    return indirimYuzdesi;
+  }
+  
+  function sepetToplaminiHesapla(sepet) {
+    let toplam = 0;
+    for (let i = 0; i < sepet.length; i++) {
+      toplam += sepet[i].fiyat;
+    }
+    return toplam;
+  }
+  
+  const sepet = [
+    { urunAdi: "Ürün 1", fiyat: 150 },
+    { urunAdi: "Ürün 2", fiyat: 250 },
+    { urunAdi: "Ürün 3", fiyat: 500 }
+  ];
+  
+  const sepetToplami = sepetToplaminiHesapla(sepet);
+  const indirimYuzdesi = indirimDurumuHesapla(sepetToplami);
+  const indirimMiktari = (sepetToplami * indirimYuzdesi) / 100;
+  const odenecekTutar = sepetToplami - indirimMiktari;
+  
+  console.log("Sepet Toplamı: " + sepetToplami + " TL");
+  console.log("İndirim Yüzdesi: " + indirimYuzdesi + "%");
+  console.log("İndirim Miktarı: " + indirimMiktari + " TL");
+  console.log("Ödenecek Tutar: " + odenecekTutar + " TL");
