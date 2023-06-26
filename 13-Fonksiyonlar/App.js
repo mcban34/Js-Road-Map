@@ -86,7 +86,7 @@
 // let sayilar = [1, 4, 3, 10, 30, 50, 13, 17, 16, 20, 73, 47, 89];
 
 // function ciftSayilar(sayi) {
-//   const ciftData = sayi.filter((element) => element % 2 == 0);
+//   let ciftData = sayi.filter((element) => element % 2 == 0);
 //   return ciftData;
 // }
 
@@ -181,13 +181,13 @@ function bolmeIslemi(sayi1, sayi2) {
     return kisiler.find((kisi) => kisi.ad === ad);
   }
   
-  const kisiler = [
+  let kisiler = [
     { ad: "Ahmet", yas: 25 },
     { ad: "Mehmet", yas: 30 },
     { ad: "Ayşe", yas: 28 }
   ];
   
-  const arananKisi = kisiBul(kisiler, "Mehmet");
+  let arananKisi = kisiBul(kisiler, "Mehmet");
   console.log(arananKisi); // Çıktı: { ad: "Mehmet", yas: 30 }
 
 //! Öğrenci notunun değerlendirildiği (AA-BB-CC-DD) function yazalım
@@ -214,7 +214,7 @@ function notuDegerlendir(not) {
     return durum;
   }
   
-  const notDurumu = notuDegerlendir(75);
+  let notDurumu = notuDegerlendir(75);
   console.log(notDurumu); // Çıktı: "BB" 
 
   //! Bir alışveriş sepetindeki ürünlerin toplam tutarına göre 
@@ -240,18 +240,92 @@ function notuDegerlendir(not) {
     return toplam;
   }
   
-  const sepet = [
+  let sepet = [
     { urunAdi: "Ürün 1", fiyat: 150 },
     { urunAdi: "Ürün 2", fiyat: 250 },
     { urunAdi: "Ürün 3", fiyat: 500 }
   ];
   
-  const sepetToplami = sepetToplaminiHesapla(sepet);
-  const indirimYuzdesi = indirimDurumuHesapla(sepetToplami);
-  const indirimMiktari = (sepetToplami * indirimYuzdesi) / 100;
-  const odenecekTutar = sepetToplami - indirimMiktari;
+  let sepetToplami = sepetToplaminiHesapla(sepet);
+  let indirimYuzdesi = indirimDurumuHesapla(sepetToplami);
+  let indirimMiktari = (sepetToplami * indirimYuzdesi) / 100;
+  let odenecekTutar = sepetToplami - indirimMiktari;
   
   console.log("Sepet Toplamı: " + sepetToplami + " TL");
   console.log("İndirim Yüzdesi: " + indirimYuzdesi + "%");
   console.log("İndirim Miktarı: " + indirimMiktari + " TL");
   console.log("Ödenecek Tutar: " + odenecekTutar + " TL");
+
+
+
+  //! Arrow Function
+
+ //* arrow function JavaScript'te bir fonksiyonu kısa ve anlaşılır bir şekilde tanımlamak için kullanılmaktadır.
+
+//  let fonksiyonAdi = (parametre1, parametre2,) => {
+//   // Fonksiyon gövdesi
+//   return deger;
+// };
+
+
+// /* Örnek */
+
+// // Toplama işlemini gerçekleştiren arrow function
+// let toplama = (sayi1, sayi2) => {
+//   return sayi1 + sayi2;
+// };
+
+// // Kısa ve sade yazılmış arrow function
+// let kareAl = sayi => sayi * sayi;
+
+// // Çıktıları konsola yazdırma
+// console.log(toplama(5, 3)); // Çıktı: 8
+// console.log(kareAl(4)); // Çıktı: 16
+
+
+// /* Örnek */ 
+
+// let ogrenciler = [
+//   { ad: 'Ahmet', yas: 18 },
+//   { ad: 'Mehmet', yas: 20 },
+//   { ad: 'Ayşe', yas: 19 },
+//   { ad: 'Fatma', yas: 21 }
+// ];
+
+// // Yaşı 20 olan öğrenciyi bulma
+// let hedefOgrenci = ogrenciler.find(ogrenci => ogrenci.yas === 20);
+
+// console.log(hedefOgrenci); // Çıktı: { ad: 'Mehmet', yas: 20 }
+
+// /* Örnek */
+
+// let ogrenciler = [
+//   { ad: 'Ahmet', yas: 18 },
+//   { ad: 'Mehmet', yas: 20 },
+//   { ad: 'Ayşe', yas: 19 },
+//   { ad: 'Fatma', yas: 21 }
+// ];
+
+// // Yaşı 19'dan büyük olan öğrencileri filtreleme
+// let secilenOgrenciler = ogrenciler.filter(ogrenci => ogrenci.yas > 19);
+
+// console.log(secilenOgrenciler);
+// // Çıktı: [
+// //   { ad: 'Mehmet', yas: 20 },
+// //   { ad: 'Fatma', yas: 21 }
+// // ]
+
+// /* örnek */
+
+// let ogrenciler = [
+//   { ad: 'Ahmet', yas: 18 },
+//   { ad: 'Mehmet', yas: 20 },
+//   { ad: 'Ayşe', yas: 19 },
+//   { ad: 'Fatma', yas: 21 }
+// ];
+
+// // Öğrenci adlarını içeren yeni bir dizi oluşturma
+// let ogrenciAdlari = ogrenciler.map(ogrenci => ogrenci.ad);
+
+// console.log(ogrenciAdlari);
+// // Çıktı: ['Ahmet', 'Mehmet', 'Ayşe', 'Fatma']
