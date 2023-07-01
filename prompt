@@ -1,0 +1,5 @@
+//?Bir işyerinde ki çalışan kişilerin yüzdelik olarak toplam gelirden kazancı.
+let calisansay = +prompt("İşyerinde ki çalişan sayisini giriniz.")
+let toplamgelir = +prompt("toplam gelirin yüzde kaçinin çalişanlara kalacağini giriniz.")
+yüzdelikmaas = toplamgelir/calisansay
+console.log(`Kişi başina yüzdelik olarak düşen pay:  %${yüzdelikmaas}`);
