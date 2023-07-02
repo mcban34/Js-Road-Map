@@ -34,6 +34,7 @@ Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini gelişti
 | Tugbatan | [GitHub](https://github.com/Tugbatan) |
 | mertekm | [GitHub](https://github.com/mertekm) |
 | SamTe5 | [GitHub](https://github.com/SamTe5) |
+| AlperenBasali | [GitHub](https://github.com/AlperenBasali) |
 | BelizBapir | [GitHub](https://github.com/BelizBapir) |
 | BerkKural | [GitHub](https://github.com/BerkKural) |
 | akmanzb | [GitHub](https://github.com/akmanzb) |
