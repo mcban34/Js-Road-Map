@@ -52,3 +52,5 @@ console.log(jsonVeri);
 
 //* JSON, web uygulamalarında veri alışverişi yaparken yaygın olarak kullanılır. 
 //* JavaScript'in JSON desteği sayesinde, verileri kolayca alabilir, gönderebilir ve işleyebilirsiniz.
+
+
