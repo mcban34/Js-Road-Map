@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "name":"Adidas AD3203",
+        "price":750
+    },
+    {
+        "id":2,
+        "name":"NIKE NK2760",
+        "price":650
+    },
+    {
+        "id":3,
+        "name":"PUMA PM4860",
+        "price":420
+    },
+    {
+        "id":4,
+        "name":"Reebok RB1256",
+        "price":920
+    },
+    {
+        "id":5,
+        "name":"UnderArmour UA6315",
+        "price":2400
+    },
+    {
+        "id":6,
+        "name":"FootLocker FL9303",
+        "price":1260
+    },
+    {
+        "id":7,
+        "name":"Skechers SH1683",
+        "price":4320
+    },
+    {
+        "id":8,
+        "name":"NewBalance NB2030",
+        "price":1000
+    },
+    {
+        "id":9,
+        "name":"Lotto LT4235",
+        "price":350
+    },
+    {
+        "id":10,
+        "name":"Lacoste LT9255",
+        "price":1600
+    }
+]
