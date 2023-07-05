@@ -24,6 +24,12 @@ let kelimeler = ["ahmet","mehmet","meryem","rojin"]
 let buyukKelimeler = kelimeler.map(value => value.toUpperCase())
 console.log(buyukKelimeler) //['AHMET', 'MEHMET', 'MERYEM', 'ROJIN']
 
+//$ to ₺
+let guncelDolarDegeri=26.09 //1$ = 26.09 ₺
+let turkLirası=[30,100,25,150,5]
+let dolar=turkLirası.map(value=>value*guncelDolarDegeri)
+console.log(dolar);
+
 
 //*bir obje içerisinde belirli bir özelliği seçmek
 let kullanicilar = [
@@ -62,6 +68,12 @@ console.log(ciftSayilar) //[2, 4, 6, 8]
 let numbers2 = [-3,4,5,-2,-6,10]
 let pozitifSayilar = numbers2.filter(value => value>0)
 console.log(pozitifSayilar) //4, 5, 10]     
+
+//*&& ile belli bir değer aralığındaki sayıları filtrelemek.(80-100 arasındaki sayıları)
+
+let sayilarDizisi=[25,111,100,82,55,85,123,90,95]
+let seksenYuzFilter=sayilarDizisi.filter(value=>value>=80 && value<=100)
+console.log(seksenYuzFilter);
 
 //*Bir dizi string elemanları belirli bir uzunluğa sahip olanları filtreleme
 let meyveler2 = ["elma","armut","kavun","kivi","ananas","muz","çilek","avakado"]
@@ -129,3 +141,8 @@ let calisanlar2 = [
 
 let calisanFind = calisanlar2.find(value => value.isim=="mehmet")
 console.log(calisanFind) //{id: 1, isim: 'mehmet', soyisim: 'coban'} => normalde iki adet mehmet adında elemanım var, find kullanarak isimi ilk mehmet olan elemana ulaşmış oldum
+
+//Belli bir değerler arasındaki ilk sayiyi bulma
+let karisikSayilar=[0,-3,-15,25,8,12,55,35,5] 
+let degerlerArasiIlkSayi=karisikSayilar.find(value=>value>0 && value<10)
+console.log(degerlerArasiIlkSayi);//çıktısı [8] 
