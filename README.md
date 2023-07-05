@@ -31,6 +31,7 @@ Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini gelişti
 | mcban34 | [GitHub](https://github.com/mcban34) |
 | Developer-Emre | [GitHub](https://github.com/Developer-Emre) |
 | Tugcekaner | [GitHub](https://github.com/Tugcekaner) |
+| Seco035 | [GitHub](https://github.com/Seco035) |
 | Tugbatan | [GitHub](https://github.com/Tugbatan) |
 | mertekm | [GitHub](https://github.com/mertekm) |
 | SamTe5 | [GitHub](https://github.com/SamTe5) |
@@ -40,3 +41,4 @@ Bu ortak proje, JavaScript öğrenmeye yeni başlayan veya becerilerini gelişti
 | akmanzb | [GitHub](https://github.com/akmanzb) |
 | deryaaltinn | [GitHub](https://github.com/deryaaltinn) |
 | lbeyaban | [GitHub](https://github.com/lbeyaban) |
+
