@@ -69,6 +69,12 @@ let numbers2 = [-3,4,5,-2,-6,10]
 let pozitifSayilar = numbers2.filter(value => value>0)
 console.log(pozitifSayilar) //4, 5, 10]     
 
+//*&& ile belli bir değer aralığındaki sayıları filtrelemek.(80-100 arasındaki sayıları)
+
+let sayilarDizisi=[25,111,100,82,55,85,123,90,95]
+let seksenYuzFilter=sayilarDizisi.filter(value=>value>=80 && value<=100)
+console.log(seksenYuzFilter);
+
 //*Bir dizi string elemanları belirli bir uzunluğa sahip olanları filtreleme
 let meyveler2 = ["elma","armut","kavun","kivi","ananas","muz","çilek","avakado"]
 let meyvelerLenFilter = meyveler2.filter(value => value.length>5)
