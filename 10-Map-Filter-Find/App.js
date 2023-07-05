@@ -24,6 +24,12 @@ let kelimeler = ["ahmet","mehmet","meryem","rojin"]
 let buyukKelimeler = kelimeler.map(value => value.toUpperCase())
 console.log(buyukKelimeler) //['AHMET', 'MEHMET', 'MERYEM', 'ROJIN']
 
+//$ to ₺
+let guncelDolarDegeri=26.09 //1$ = 26.09 ₺
+let turkLirası=[30,100,25,150,5]
+let dolar=turkLirası.map(value=>value*guncelDolarDegeri)
+console.log(dolar);
+
 
 //*bir obje içerisinde belirli bir özelliği seçmek
 let kullanicilar = [
