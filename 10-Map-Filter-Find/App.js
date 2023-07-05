@@ -141,3 +141,8 @@ let calisanlar2 = [
 
 let calisanFind = calisanlar2.find(value => value.isim=="mehmet")
 console.log(calisanFind) //{id: 1, isim: 'mehmet', soyisim: 'coban'} => normalde iki adet mehmet adında elemanım var, find kullanarak isimi ilk mehmet olan elemana ulaşmış oldum
+
+//Belli bir değerler arasındaki ilk sayiyi bulma
+let karisikSayilar=[0,-3,-15,25,8,12,55,35,5] 
+let degerlerArasiIlkSayi=karisikSayilar.find(value=>value>0 && value<10)
+console.log(degerlerArasiIlkSayi);//çıktısı [8] 
