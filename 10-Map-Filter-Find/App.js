@@ -30,6 +30,34 @@ let turkLirası=[30,100,25,150,5]
 let dolar=turkLirası.map(value=>value*guncelDolarDegeri)
 console.log(dolar);
 
+//Dizi içindeki sayilari negatife çevirme
+
+let pozitifSay=[3,5,7,10,20]
+let negatifSay=pozitifSay.map(value=>-value)
+console.log(negatifSay);
+
+//Dizi içindeki sayilari rastgele 0 ile 1 arasinda ondalik degerlere dönüştürme
+
+let numbers=[1,2,3]
+let rastgeleSayilar=numbers.map(() =>Math.random())
+console.log(rastgeleSayilar);
+
+//İki diziyi birleştirerek yeni bir dizi oluşturmak
+
+let isimler=["Mehmet","Selçuk","Melis"]
+let selam=["Merhaba","Nasılsın","İyi Günler"]
+let birlestirme=isimler.map((isim,siralama) => `${selam[siralama]},${isim}`)
+console.log(birlestirme);
+
+//Dizideki elemanların ilk harflerini başka bir harfle değiştirmek
+
+let isimlers=["Mehmet","Selçuk","Melis"]
+let yeniIsimler=isimlers.map((value) => {
+    return "X" + value.slice(1)
+})
+console.log(yeniIsimler); // ÇIKTISI :['Xehmet', 'Xelçuk', 'Xelis']
+
+
 
 //*bir obje içerisinde belirli bir özelliği seçmek
 let kullanicilar = [
@@ -60,9 +88,21 @@ console.log(meyvelerLen) //[4, 5, 5, 4]
 //*filter fonksiyonu, bir dizi üzerinde belirli bir koşulu sağlayan elemanları filtreleyerek yeni bir dizi oluşturur.
 
 //*çift sayıları ayrıştırıp yeni bir dizi oluşturmak
-let newNumbers = [2,4,5,6,7,8]
-let ciftSayilar = newNumbers.filter(value => value%2==0)
-console.log(ciftSayilar) //[2, 4, 6, 8]
+
+// let newNumbers = [2,4,5,6,7,8]
+// let ciftSayilar = newNumbers.filter(value => value%2==0)
+// console.log(ciftSayilar) //[2, 4, 6, 8]
+
+//Yukardaki Örneğe benzer bir örnek
+//Belli bir koşula göre sayilari filtreleyip yeni iki adet dizi oluşturuldu
+
+let ayristirilcakSayilar=[1,2,3,4,5,20,25,30,35,22,98]
+
+let ciftSayilar = ayristirilcakSayilar.filter((value) => value % 2 == 0)
+let tekSayilar = ayristirilcakSayilar.filter((value) => value % 2 !== 0)
+
+console.log(`Çift Sayilar : ${ciftSayilar}`)
+console.log(`Tek Sayilar : ${tekSayilar}`)
 
 //*bir dizideki pozitif sayıları filtrelemek
 let numbers2 = [-3,4,5,-2,-6,10]
@@ -79,7 +119,6 @@ console.log(seksenYuzFilter);
 let meyveler2 = ["elma","armut","kavun","kivi","ananas","muz","çilek","avakado"]
 let meyvelerLenFilter = meyveler2.filter(value => value.length>5)
 console.log(meyvelerLenFilter) //['ananas', 'avakado']
-
 
 //*Bir dizi obje üzerinde belirli bir koşulu sağlayan objeleri filtreleme
 let ogrenciler = [
