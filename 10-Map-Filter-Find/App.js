@@ -30,6 +30,34 @@ let turkLirası=[30,100,25,150,5]
 let dolar=turkLirası.map(value=>value*guncelDolarDegeri)
 console.log(dolar);
 
+//Dizi içindeki sayilari negatife çevirme
+
+let pozitifSay=[3,5,7,10,20]
+let negatifSay=pozitifSay.map(value=>-value)
+console.log(negatifSay);
+
+//Dizi içindeki sayilari rastgele 0 ile 1 arasinda ondalik degerlere dönüştürme
+
+let numbers=[1,2,3]
+let rastgeleSayilar=numbers.map(() =>Math.random())
+console.log(rastgeleSayilar);
+
+//İki diziyi birleştirerek yeni bir dizi oluşturmak
+
+let isimler=["Mehmet","Selçuk","Melis"]
+let selam=["Merhaba","Nasılsın","İyi Günler"]
+let birlestirme=isimler.map((isim,siralama) => `${selam[siralama]},${isim}`)
+console.log(birlestirme);
+
+//Dizideki elemanların ilk harflerini başka bir harfle değiştirmek
+
+let isimlers=["Mehmet","Selçuk","Melis"]
+let yeniIsimler=isimlers.map((value) => {
+    return "X" + value.slice(1)
+})
+console.log(yeniIsimler); // ÇIKTISI :['Xehmet', 'Xelçuk', 'Xelis']
+
+
 
 //*bir obje içerisinde belirli bir özelliği seçmek
 let kullanicilar = [
