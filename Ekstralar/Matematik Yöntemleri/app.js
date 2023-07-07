@@ -95,10 +95,6 @@ console.log(Math.pow(say20, us)); // 8
 
 console.log(Math.random());
 
-//* random() 0 ile istediğimiz sayi aralığında sayi üretebilmek için üretmek istediğimiz sayi ile çarpabiliriz.
-
-console.log(Math.random() * 11); // 0 ile 10 arasında rastgele ondalık bir sayi
-
 // * sign() Verilen sayının işaretini döndürür.
 
 let say21 = -10;
