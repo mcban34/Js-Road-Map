@@ -42,6 +42,24 @@ console.log(Math.ceil(0.75)); // Sonuç: 1
 
 /* Örnekler*/ 
 
+//! round() ile bir ondalık sayıyı en yakın büyük tam sayıya yuvarlama
+
+let ondalikSayi1=1.1
+console.log(Math.round(ondalikSayi1 + .5));
+
+//! round() ile bir ondalık sayıyı en yakın küçük tam sayıya yuvarlama
+
+let ondalikSayi2=1.7
+console.log(Math.round(ondalikSayi2 + -.5));
+
+//! floor() ile negatif bir tam sayiyi yuvarlama işlemi
+let negatifSayi=-24.2
+console.log(Math.floor(negatifSayi)); // -25
+
+//!floor() ile ondalık sayıyı % cinsinden tam sayiya yuvarlamak
+let ondalikSayi=0.255
+console.log(`%${Math.floor(ondalikSayi*100)}`); // %25
+
 // 0 ile 100 arasında rastgele bir puan elde edelim
 const puan = Math.floor(Math.random() * 101);
 
@@ -72,6 +90,11 @@ console.log("Notunuz: " + not);
 const zarAtmaSonucu = Math.floor(Math.random() * 6) + 1;
 
 console.log("Zar Atma Sonucu: " + zarAtmaSonucu);
+
+//! Yazi tura simulasyonu
+
+let yaziTura= Math.random() < 0.5 ? "Yazı" : "Tura" // üretilen sayi 0.5 ten küçükse "yazı" büyükse "tura" gelir.
+console.log(yaziTura);
 
 //! Katılımcı listesi oluşturulsun ve oluşturulan listeden rastgele biri seçilsin. Eğer katılımcı yok ise "Çekilişe katılan kimse yok!" mesajı ekrana yazdırılır.
 //! Eğer geçerli bir katılımcı sayısı varsa bir kura çekilsin ve çekilişi rastgele kazanan bir katılımcı olsun. Çekiliş sonucunu ekrana yazdıran kodu yazdıralım.
