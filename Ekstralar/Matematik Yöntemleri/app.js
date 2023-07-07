@@ -68,15 +68,6 @@ console.log(Math.round(say16)) //15
 let say17 = 27.7845123
 console.log(Math.round(say17)); //28
 
-//* round() ile bir ondalık sayıyı en yakın büyük tam sayıya yuvarlama
-
-let ondalikSayi1=1.1
-console.log(Math.round(ondalikSayi1 + .5));
-
-//* round() ile bir ondalık sayıyı en yakın küçük tam sayıya yuvarlama
-
-let ondalikSayi2=1.7
-console.log(Math.round(ondalikSayi2 + -.5));
 
 // * atan2() İki argüman alan atan işlemini yapar ve sonucu radyan cinsinden döndürür.
 
@@ -94,14 +85,6 @@ console.log(Math.exp(say18)); // 7.38905609893065
 let say19 = 25.4;
 console.log(Math.floor(say19)); // 25
 
-//* floor() ile negatif bir tam sayiyi yuvarlama işlemi
-let negatifSayi=-24.2
-console.log(Math.floor(negatifSayi)); // -25
-
-//*floor() ile ondalık sayıyı % cinsinden tam sayiya yuvarlamak
-let ondalikSayi=0.255
-console.log(`%${Math.floor(ondalikSayi*100)}`); // %25
-
 // * pow() Verilen sayının üssünü döndürür.
 
 let say20 = 2;
@@ -115,16 +98,6 @@ console.log(Math.random());
 //* random() 0 ile istediğimiz sayi aralığında sayi üretebilmek için üretmek istediğimiz sayi ile çarpabiliriz.
 
 console.log(Math.random() * 11); // 0 ile 10 arasında rastgele ondalık bir sayi
-
-//* random() ile diziden rastgele bir eleman seçme
-
-let renkler=["kırmızı","siyah","mavi","sarı","beyaz","yeşil"]
-console.log(renkler[Math.floor(Math.random()* renkler.length)]); // çıktısı rastgele bir dizi elemanı olacak
-
-//*random() ile yazı tura simulasyonu
-
-let yaziTura= Math.random() < 0.5 ? "Yazı" : "Tura" // üretilen sayi 0.5 ten küçükse "yazı" büyükse "tura" gelir.
-console.log(yaziTura);
 
 // * sign() Verilen sayının işaretini döndürür.
 
