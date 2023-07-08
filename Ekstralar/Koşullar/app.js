@@ -26,4 +26,11 @@
 //*Küçük veya eşitse(<=)
 // console.log(4<=8); //false
 
+//*Ve(&&)
+// console.log(5==5 && 1<9); //true
+
+//Veya(||)
+// console.log(5==4 || 9<1); //false
+
+
 
