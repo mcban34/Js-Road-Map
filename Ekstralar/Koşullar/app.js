@@ -136,3 +136,12 @@ console.log(sonuc); //Sayı Negatiftir
 let sayi2=35
 let sonuc1=sayi2 >= 10 && sayi1 <= 99 ? "Çift basamaklı" : "Tek Basamaklı"
 console.log(sonuc1);
+
+//* ?? Nullish Coalescing Operatorü => Bir değişkenin Null ve Undefined olup olmadığını kontrol eden operatördür.
+//*NOT:Nullish Coalescing Operatorü Null veya undefined değerleri kontrol etmek ve alternatif değerler belirlemek için kullanışlı bir araçtır.
+
+let isim=null
+let atanacakIsim="Selçuk"
+let sonuc2= isim??atanacakIsim //Bu kod bloğunu söyle açıklayabiliriz=>isim değişkeni null veya undefined ise atanacakIsim'i isim değişkenine ata
+console.log(sonuc2);
+
