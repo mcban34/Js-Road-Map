@@ -54,8 +54,9 @@
 
 //ELSE-IF => if koşulunun olmadığı durumlar için alternatif üretir ve zincirleme olarak çalışır.
 
+//?Örnek:
 //?Dışarıdan hangi ayda olduğunuzu tanımlayın
-//?Hangi ayda olduğumuzu bulunuz.
+//?Hangi mevsimde olduğumuzu bulunuz.
 
 // let ay = "haziran"
 // if(ay=="haziran"){
@@ -72,3 +73,38 @@
 //     console.log("hatalı giriş");
 // }
 
+//*SWITCH-CASE => Çalışma mantığı if-else ve else-if koşul zinciri ile aynıdır fakat bunu yapmanın daha kısa yolu switch-casedir.
+//*Kontrol edilmesi gereken değeri switche girip değerin oluşturması ve alabilceği değerleride case'in içine giriyoruz.
+
+// switch (kontrol edilecek deger) {
+//     case kontrol edilen deger:
+//       // kontrol edilen degerin durumu için yapılacak işlemler
+//       break; //case durumu işlenirse kod bloğundan çıkılması gerektiğini belirtir.
+//     case kontrol edilen deger:
+//       // kontrol edilen degerin durumu için yapılacak işlemler
+//       break;
+//     default:
+//       // Hiçbir durum eşleşmezse default değer işleme girecek
+//       break;
+//   }
+
+//?Örnek: => yukarıdaki ay örnegini birde switch-case ile yapalım.
+//?Dışarıdan bir değişkene hangi ayda olduğunuzu tanımlayın.
+//?Hangi mevsimde olduğumuzu bulunuz.
+
+// let ay="haziran"
+
+// switch(ay){
+//     case "haziran":
+//         console.log("Yaz Mevsimindesiniz");
+//         break;
+//     case "ocak":
+//         console.log("Kış Mevsimindesiniz");   
+//         break;
+//     case "eylül":
+//         console.log("Sonbahar Mevsimindesiniz");
+//         break;
+//     default:
+//         console.log("Geçersiz Mevsim");
+//         break;
+// }
