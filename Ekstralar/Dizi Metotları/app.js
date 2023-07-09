@@ -127,5 +127,41 @@ console.log(dizi20.sort()); // Çıktısı: [1,2,3,4,7,9]
 dizi21=["elma","Armut","Ceviz","Balık"]
 console.log(dizi21.sort()); // Çıktısı: ["Armut","Balık","Ceviz","Elma"]
 
-let dizi22=[1,2,3,4]
-console.log(dizi22.slice());
+
+//Dizinin bir kısmını alır. Başlangıç indexi dahil bitiş dahil değil(SLİCE)
+
+let dizi23=[7,8,9,3]
+console.log(dizi23.slice(1,3)); // Çıktısı: [8,9]
+
+//Dizinin bir kısmını siler.Başlangıç indexi ve silinecek eleman sayısı belirtilir(SPLİCE)
+
+let dizi24=[5,6,7,8,9]
+console.log(dizi24.splice(1,3));// Çıktısı: [6,7,8]
+console.log(dizi24); // Çıktısı: [5,9]
+
+//Doğrudan verilere ulaşıp verilerin değerlerini yazar(FOROF)
+
+let dizi25 = ["kırmızı","mavi","turuncu","yeşil","gri","siyah"]
+
+for (const value of dizi25) {
+    console.log(value);
+} //Çıktısı: bütün dizi elemanlarını tek tek yazdırır
+
+//Verilerin index numaralarını yazar(FORİN)
+
+let dizi26 = ["kırmızı","mavi","turuncu","yeşil","gri","siyah"]
+
+for (const element in dizi26) {
+    console.log(element); "DEĞERLERİNE ULAŞMAK İÇİNSE: console.log(renkler[element]) şeklinde yazabiliriz."
+} //Çıktısı: bütün dizi elemanlarının indexini tek tek yazdırır
+
+//Yapı olarak filter ile aynı fakat belirlenen koşulu bulur bulmaz ilk üründe sonlanır.(FİND)
+
+let dizi27=["elma","üzüm","muz","karpuz","elma"]
+let sonuc7=dizi27.find(value=>value=="elma")
+console.log(sonuc7); // Çıktısı: "elma" (ilk elmayı buldu ve sonlandı)
+
+//Diziyi elemanlarını string ifadeye çevirir(TOSTRİNG)
+
+let dizi28=["Fıstık","Ceviz","Badem","Fındık"]
+console.log(dizi28.toString()); // Çıktısı: Fıstık,Ceviz,Badem,Fındık
