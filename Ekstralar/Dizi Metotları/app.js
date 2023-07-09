@@ -82,3 +82,50 @@ console.log(dizi14); // Çıktısı: [1,2,3,4]
 let dizi15=[1,2]
 dizi15.push(4)
 console.log(dizi15); //Çıktısı: [1,2,4]
+
+//Dizi elemanlarını tek bir değere indirgemek için kullanılır.
+//Bu metot bir dizi üzerinde döngü yaparak her elemanı birleştirir
+//Ve sonuç olarak tek bir değer döndürür. (REDUCE)
+
+let dizi16=[1,2,3,4,5]
+let sonuc3=dizi16.reduce((biriktirilcekYer,mevcutEleman)=>{
+    return biriktirilcekYer + mevcutEleman //return her bir elemanı sıra sıra dönmesi için kullanılır.
+}, 0) //başlangıç değeri 0
+console.log(sonuc3); //Çıktısı (1+2+3+4+5): 15 
+
+//Yukardaki reduce işleminin aynısını yapar fakat işlemi sağdan sola yapar.(REDUCERİGHT)
+let dizi17=[1,2,3,4]
+let sonuc4=dizi17.reduceRight((x,y)=>{
+    return x+y
+},0)
+console.log(sonuc4); //Çıktısı (4+3+2+1): 10
+
+//*Dizi içindeki tüm elemanların belirli bir koşulu karşılayıp karşılamadığını kontrol eder.
+//*Bütün elemanlar koşulu karşılıyosa true karşılamıyosa false döner.(EVERY)
+
+let dizi18=[1,2,3,4,5]
+let sonuc5=dizi18.every((sayi)=>{
+    return sayi>0 // return;her bir elemanı kontrol etmesi için kullanılır.
+})
+console.log(sonuc5); // Çıktısı: true
+
+//Everynin aynısı fakat en az birisinin verilen koşuldan geçmesi beklenir(SOME)
+
+let dizi19=[7,8,9,10]
+let sonuc6=dizi19.some((value)=>{
+    return value>=10
+})
+console.log(sonuc6); // Çıktısı: true
+
+//Diziyi alfabetik veya numerik sıraya göre sıralar(SORT)
+
+//numerik
+let dizi20=[2,4,7,1,9,3]
+console.log(dizi20.sort()); // Çıktısı: [1,2,3,4,7,9]
+
+//alfabetik
+dizi21=["elma","Armut","Ceviz","Balık"]
+console.log(dizi21.sort()); // Çıktısı: ["Armut","Balık","Ceviz","Elma"]
+
+let dizi22=[1,2,3,4]
+console.log(dizi22.slice());
