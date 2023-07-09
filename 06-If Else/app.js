@@ -319,7 +319,7 @@ if (sayi13 >= sayi14) {
 // }
 
 
-// ! Bir kişi mağazadan 100 TL ve üzeri alışveriş yaparsa %10 indirim, 200 TL ve üzeri alışveriş
+// ! Bir kişi mağazadan 100 TLF ve üzeri alışveriş yaparsa %10 indirim, 200 TL ve üzeri alışveriş
 // ! yaparsa %15 indirim, 300 TL ve üzeri alışveriş yaparsa %20
 // ! indirim kazandığını ve ödeyeceği miktarı ekrana yazınız
 // let alisverisTutari = 100;
