@@ -56,3 +56,29 @@ console.log(dizi10.split(" ")); // Çıktısı: ["Merhaba","Selçuk","nasılsın
 
 let dizi11=[1,2,3,4]
 console.log(dizi11.length); // Çıktısı: 4
+
+//Dizinin sonundan eleman çıkarır ve çıkardığı değeri döndürür(POP)
+
+let dizi12=[1,2,3,4,5]
+console.log(dizi12.pop()); // Çıktısı: 5
+console.log(dizi12.pop()); // Çıktısı: 4
+console.log(dizi12); // Çıktısı: [1,2,3]
+
+//Dizinin ilk elamanını çıkarır pop'un tam tersi(SHİFT)
+
+let dizi13=[1,2,3,4]
+console.log(dizi13.shift()); // Çıktısı: 1
+console.log(dizi13.shift()); // Çıktısı: 1
+console.log(dizi13); // Çıktısı: [3,4]
+
+//Dizinin en başına eleman ekler ve dizinin yeni uzunlugunu döner.(UNSHİFT)
+
+let dizi14=[2,3,4]
+console.log(dizi14.unshift(1)); // Çıktısı(1'ide ekledi): 4
+console.log(dizi14); // Çıktısı: [1,2,3,4]
+
+//Dizinin sonuna eleman ekler.(PUSH)
+
+let dizi15=[1,2]
+dizi15.push(4)
+console.log(dizi15); //Çıktısı: [1,2,4]
