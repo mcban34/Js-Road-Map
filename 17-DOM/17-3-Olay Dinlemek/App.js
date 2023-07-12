@@ -20,6 +20,27 @@ button.addEventListener("click", function () {
 
 /* Örnek-1 */
 
+let x = document.getElementById("myBtn");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML += "Moused over!<br>";
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML += "Clicked!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>";
+}
+
+
+
+/* Örnek-2 */
+
 let box = document.getElementById("myBox");
 
 box.addEventListener("mouseover", function () {
@@ -30,7 +51,7 @@ box.addEventListener("mouseout", function () {
   box.style.backgroundColor = "red";
 });
 
-/* Örnek-2 */
+/* Örnek-3 */
 
 let form = document.getElementById("myForm");
 
@@ -47,7 +68,7 @@ form.addEventListener(
   // ... verileri başka bir yere gönderme veya işleme kodları
 );
 
-/* Örnek-3 */
+/* Örnek-4 */
 
 let select = document.getElementById("mySelect");
 
@@ -58,7 +79,7 @@ let select = document.getElementById("mySelect");
   console.log("Seçilen seçenek:", selectedOption);
 };
 
-/* Örnek-4 */
+/* Örnek-5 */
 
 let input = document.getElementById("myInput");
     input.onchange = function(event) {
