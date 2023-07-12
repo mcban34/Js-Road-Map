@@ -68,6 +68,7 @@ console.log(Math.round(say16)) //15
 let say17 = 27.7845123
 console.log(Math.round(say17)); //28
 
+
 // * atan2() İki argüman alan atan işlemini yapar ve sonucu radyan cinsinden döndürür.
 
 let arg1 = 1;

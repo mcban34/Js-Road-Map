@@ -82,6 +82,12 @@ final = +prompt("Final notunuzu giriniz : ")
 ortlama = +((vize*0.4) + (final*0.6))
 console.log("Ortalamanız : " + ortlama)
 
+//?Bir işyerinde ki çalışan kişilerin yüzdelik olarak toplam gelirden kazancı.
+let calisansay = +prompt("İşyerinde ki çalişan sayisini giriniz.")
+let toplamgelir = +prompt("toplam gelirin yüzde kaçinin çalişanlara kalacağini giriniz.")
+yüzdelikmaas = toplamgelir/calisansay
+console.log(`Kişi başina yüzdelik olarak düşen pay:  %${yüzdelikmaas}`);
+
 
 //?Klavyeden girilen iki sayının aritmetik olarak dört işlem sonucunu 
 //?hesaplayan ve sonucu ekranda gösteren javascript kodunu yazınız.

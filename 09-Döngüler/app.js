@@ -329,6 +329,17 @@ while (i<20){
    }
 }
 
+//*Örnek
+//While ile kullanicidan alinan sayinin faktöriyelini hesaplama yöntemi.
+
+let girilenSayi=+prompt("Lütfen Faktöriyelini hesaplamak istediğiniz sayiyi giriniz") //faktöriyelini hesaplicağimiz sayi
+let faktoriyel=1
+while(girilenSayi>0){
+    faktoriyel *= girilenSayi //sayiyi faktoriyel ile çarpar
+    girilenSayi-- //sayiyi bir azaltir
+}
+document.write(faktoriyel) //faktöriyeli hesaplanan sayimizi web sayfasina bastirir
+
 //!do-while
 //do-while döngüsü, while döngüsüne benzer, ancak farklı olarak koşul değerlendirmesi döngünün sonunda gerçekleştirilir.
 //Bu da demektir ki, do bloğu en az bir kez çalıştırılır ve ardından koşul kontrol edilir. Eğer koşul doğru ise döngü devam eder, 
