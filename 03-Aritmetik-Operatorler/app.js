@@ -74,7 +74,7 @@ let say14 = 10
 say14-=1 //say14 = say14 - 1
 console.log(say14)
 
-//? eval() bir fonksiyon olsada , birden çok işlem yaptırmamız gereken projelerde kolaylık sağlar.string ifade kullanarak yapmak istediğimiz işlemi algılar ve sonucunu yazdırır. 
+//? eval() bir fonksiyon olsa da , birden çok işlem yaptırmamız gereken projelerde kolaylık sağlar.string ifade kullanarak yapmak istediğimiz işlemi algılar ve sonucunu yazdırır. 
 let value = eval('1+1');
 alert(value); // 2
 

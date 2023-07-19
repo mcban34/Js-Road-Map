@@ -1,5 +1,6 @@
 // //!fonksiyonlar
-// //*JavaScript'te fonksiyonlar, belirli bir işlevi gerçekleştiren ve tekrar tekrar kullanılabilen kod bloklarıdır. Fonksiyonlar, programın düzenini sağlar, kodu daha okunabilir hale getirir ve işleri modüler bir şekilde yapmayı sağlar.
+// *JavaScript'te fonksiyonlar, belirli bir işlevi gerçekleştiren ve tekrar tekrar kullanılabilen kod bloklarıdır. 
+// *Fonksiyonlar, programın düzenini sağlar, kodu daha okunabilir hale getirir ve işleri modüler bir şekilde yapmayı sağlar.
 
 // function mesajVer (){
 //     console.log("fonksiyon çalıştı")
@@ -329,3 +330,31 @@ function notuDegerlendir(not) {
 
 // console.log(ogrenciAdlari);
 // // Çıktı: ['Ahmet', 'Mehmet', 'Ayşe', 'Fatma']
+
+// ! Closures - Kapanışlar 
+// * Bir fonksiyonun dışarıdaki değişkenleri ve kapsamı koruyabilmesini sağlayan önemli bir JavaScript konseptidir. 
+// * Bir fonksiyonun, kendi kapsamında tanımlanan değişkenlerin yanı sıra, 
+// * üst kapsamdaki değişkenlere de erişebilmesini ve onları hatırlayabilmesini ifade eder. 
+// * Böylece, bir fonksiyon başka bir kapsamda çağrılsa bile o kapsamdaki değişkenlere erişebilir. 
+// * Bu, işlevlerin daha esnek ve güçlü hale gelmesini sağlar.
+
+// ? Closures örnek
+
+function sayHelloTo(name) {
+  // * İç fonksiyon (closure)
+  function greetingMessage() {
+    return "Merhaba, " + name + "!";
+  }
+
+  return greetingMessage;
+}
+
+// * greetTugce, sayHelloTo fonksiyonunu çağırdıktan sonra hala name değişkenine erişebilir
+const greetTugce = sayHelloTo("Tugce");
+
+// * greetBerk, sayHelloTo fonksiyonunu çağırdıktan sonra hala name değişkenine erişebilir
+const greetBerk = sayHelloTo("Berk");
+
+// * greetTugce ve greetBerk, içlerindeki name değişkenlerini hatırlar
+console.log(greetTugce()); // ? Çıktı: "Merhaba, Tugce!"
+console.log(greetBerk()); // ? Çıktı: "Merhaba, Berk!"
